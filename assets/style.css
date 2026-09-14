@@ -59,3 +59,15 @@ a{color:inherit;text-decoration:none}button{font:inherit}.skip-link{position:fix
 .contact-company p{margin:0 0 16px}
 .contact-company .contact-pec{margin:14px 0 0;font-size:13px;overflow-wrap:anywhere}
 @media(max-width:900px){.contact-company{flex-basis:auto}}
+
+/* Nexa secondary divisions */
+.hero-services .hero-media{background:radial-gradient(circle at 72% 28%,rgba(213,0,25,.23),transparent 21%),linear-gradient(118deg,#071b35 0%,#0c2748 55%,#16395f 100%)}
+.hero-digital .hero-media{background:radial-gradient(circle at 76% 35%,rgba(213,0,25,.35),transparent 18%),radial-gradient(circle at 68% 44%,rgba(73,137,255,.32),transparent 27%),linear-gradient(125deg,#050e1c 0%,#071b35 48%,#102e50 100%)}
+.hero-services .hero-media:after,.hero-digital .hero-media:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to right,transparent 20%,#000 70%)}
+.digital-panel{min-height:490px;border-radius:28px;background:linear-gradient(145deg,#071b35,#102f52);position:relative;overflow:hidden;display:grid;place-items:center;color:#fff}
+.digital-panel:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:40px 40px}
+.digital-orbit{position:absolute;border:1px solid rgba(255,255,255,.24);border-radius:50%}.digital-orbit-a{width:340px;height:340px}.digital-orbit-b{width:220px;height:220px;border-color:rgba(213,0,25,.7)}
+.digital-core{position:relative;z-index:2;width:150px;height:150px;border-radius:50%;background:#fff;color:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:26px;font-weight:800;letter-spacing:.08em;box-shadow:0 20px 50px rgba(0,0,0,.22)}
+.digital-core span{font-size:8px;letter-spacing:.11em;margin-top:7px;text-transform:uppercase;color:var(--muted)}
+.hero-services h1,.hero-digital h1{max-width:980px}
+@media(max-width:900px){.hero-services .hero-media,.hero-digital .hero-media{background:linear-gradient(180deg,#102e50,#071b35 72%)}.digital-panel{min-height:380px}}
