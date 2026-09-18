@@ -1,0 +1,106 @@
+/* Serramenti: hub + B2C/B2B */
+.serramenti-hero .hero-content{margin-bottom:8vh}
+.compact-head{margin-bottom:38px}
+.audience-section{background:#f7f9fc}
+.audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.audience-card{min-height:430px;border-radius:30px;padding:42px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;transition:.3s;box-shadow:0 18px 55px rgba(8,24,48,.07)}
+.audience-card:hover{transform:translateY(-5px)}
+.audience-private{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.94)),url("./hero-serramenti.png") center/cover;color:var(--ink)}
+.audience-business{background:linear-gradient(145deg,#071b35,#0e3158);color:#fff}
+.audience-business:after{content:"";position:absolute;width:360px;height:360px;border:80px solid var(--yellow);border-radius:50%;right:-210px;top:-170px;opacity:.9}
+.audience-label,.audience-card h3,.audience-card p,.audience-link{position:relative;z-index:1}
+.audience-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;margin-bottom:auto}
+.audience-card h3{font-size:clamp(34px,4vw,54px);line-height:1;letter-spacing:-.055em;margin:20px 0}
+.audience-card p{font-size:15px;line-height:1.7;max-width:590px;color:var(--muted)}
+.audience-business p{color:#c5d1df}
+.audience-link{margin-top:22px;font-size:13px;font-weight:800}
+.proof-section{padding-top:40px}
+.proof-banner{border-radius:30px;background:var(--soft);padding:46px;display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:end}
+.proof-banner h2{font-size:clamp(36px,4vw,58px);line-height:1;letter-spacing:-.05em;margin:10px 0 0}
+.proof-banner>p{color:var(--muted);line-height:1.7}
+.proof-banner .btn{justify-self:start}
+.work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.work-chip{padding:20px;border:1px solid var(--line);border-radius:16px;font-size:13px;font-weight:700;background:#fff;min-height:72px;display:flex;align-items:center}
+
+.subhero{min-height:72vh;position:relative;background:var(--navy);color:#fff;overflow:hidden;display:flex;align-items:flex-end}
+.subhero-media{position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,12,27,.97),rgba(2,12,27,.72) 45%,rgba(2,12,27,.18)),url("./hero-serramenti.png") center/cover}
+.business-subhero .subhero-media{background:linear-gradient(110deg,rgba(2,12,27,.98),rgba(3,24,48,.9) 58%,rgba(213,0,25,.18)),url("./hero-serramenti.png") right center/cover}
+.subhero-content{position:relative;z-index:2;width:min(1240px,calc(100% - 48px));margin:0 auto 8vh;padding-top:60px}
+.subhero h1{font-size:clamp(48px,6.7vw,96px);line-height:.93;letter-spacing:-.065em;margin:20px 0;max-width:1050px}
+.subhero h1 span{color:#fff}
+.subhero p{max-width:720px;font-size:18px;line-height:1.65;color:#d2dae6}
+.subhero .btn{margin-top:20px}
+
+.choice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.choice-card{border-radius:24px;background:var(--soft);padding:32px;min-height:330px;display:flex;flex-direction:column}
+.choice-card>span{font-size:11px;font-weight:800;letter-spacing:.16em;color:var(--blue)}
+.choice-card h3{font-size:27px;line-height:1.08;letter-spacing:-.04em;margin:28px 0 14px}
+.choice-card p{color:var(--muted);font-size:14px;line-height:1.65}
+.choice-card strong{margin-top:auto;font-size:13px;color:var(--navy)}
+
+.phase-flow{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #39506d;border-bottom:1px solid #39506d}
+.phase{padding:34px 28px;border-right:1px solid #39506d}
+.phase:last-child{border-right:0}
+.phase b{display:block;color:var(--yellow);font-size:12px;margin-bottom:48px}
+.phase h3{font-size:21px;margin:0 0 10px}
+.phase p{font-size:13px;line-height:1.6;color:#b7c4d5}
+.quote-strip{padding:40px 24px;background:#edf2f8}
+.quote-inner{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.quote-inner p{margin:0;font-size:18px;line-height:1.55}
+.dark-quote{background:#071b35;color:#fff}
+.dark-quote .quote-inner{grid-template-columns:1fr}
+.dark-quote p{max-width:1000px}
+
+.proof-inline{background:var(--navy);color:#fff;border-radius:28px;padding:34px 40px;display:grid;grid-template-columns:auto 1fr 1.6fr;gap:26px;align-items:center}
+.proof-inline span{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:#aebdd0}
+.proof-inline strong{font-size:23px}
+.proof-inline p{margin:0;color:#bac7d7;line-height:1.6;font-size:14px}
+
+.b2b-formulas{padding-top:50px}
+.b2b-flow{display:grid;grid-template-columns:repeat(7,1fr);border-top:1px solid #39506d}
+.b2b-flow article{padding:28px 18px;border-right:1px solid #39506d}
+.b2b-flow article:last-child{border-right:0}
+.b2b-flow b{display:block;color:var(--yellow);font-size:12px;margin-bottom:34px}
+.b2b-flow h3{font-size:17px;margin:0 0 10px}
+.b2b-flow p{font-size:12px;line-height:1.55;color:#b7c4d5}
+
+.partner-principles{background:#f7f9fc}
+.principle-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.principle-grid article{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;min-height:220px}
+.principle-grid h3{font-size:20px;margin:0 0 14px}
+.principle-grid p{font-size:13px;line-height:1.65;color:var(--muted)}
+
+.download-panel{background:linear-gradient(135deg,#071b35,#0d3159);color:#fff;border-radius:30px;padding:46px;display:flex;gap:40px;align-items:end;justify-content:space-between;position:relative;overflow:hidden}
+.download-panel:after{content:"PDF";position:absolute;right:-25px;top:-55px;font-size:190px;font-weight:800;color:rgba(255,255,255,.035)}
+.download-panel>div,.download-panel .btn{position:relative;z-index:1}
+.download-panel h2{font-size:clamp(36px,4vw,58px);line-height:1;letter-spacing:-.05em;margin:10px 0 16px}
+.download-panel p{max-width:760px;color:#c4d0de;line-height:1.65}
+
+@media(max-width:1000px){
+  .work-grid{grid-template-columns:repeat(3,1fr)}
+  .b2b-flow{grid-template-columns:repeat(4,1fr)}
+  .b2b-flow article:nth-child(4){border-right:0}
+  .b2b-flow article{border-bottom:1px solid #39506d}
+  .principle-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:800px){
+  .audience-grid,.choice-grid,.quote-inner{grid-template-columns:1fr}
+  .audience-card{min-height:360px}
+  .proof-banner{grid-template-columns:1fr}
+  .proof-inline{grid-template-columns:1fr;gap:10px}
+  .phase-flow{grid-template-columns:1fr 1fr}
+  .phase:nth-child(2){border-right:0}
+  .phase{border-bottom:1px solid #39506d}
+  .download-panel{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:560px){
+  .subhero{min-height:84vh}
+  .subhero-content{width:calc(100% - 36px);margin-bottom:6vh}
+  .subhero h1{font-size:49px}
+  .subhero p{font-size:15px}
+  .work-grid{grid-template-columns:1fr 1fr}
+  .phase-flow,.principle-grid,.b2b-flow{grid-template-columns:1fr}
+  .phase,.b2b-flow article{border-right:0}
+  .audience-card{padding:28px}
+  .proof-banner,.download-panel{padding:30px}
+}
