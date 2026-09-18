@@ -104,3 +104,56 @@
   .audience-card{padding:28px}
   .proof-banner,.download-panel{padding:30px}
 }
+
+
+/* Public B2B service list */
+.listino-web{background:#eef2f6;color:var(--ink)}
+.listino-topbar{position:sticky;top:0;z-index:10;background:rgba(7,27,53,.96);backdrop-filter:blur(12px);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:14px max(20px,calc((100vw - 980px)/2))}
+.listino-back{font-size:13px;font-weight:700}
+.listino-print{border:0;border-radius:999px;background:var(--yellow);color:#fff;padding:11px 18px;font-weight:800;cursor:pointer}
+.listino-document{width:min(980px,calc(100% - 28px));margin:30px auto;background:#fff;box-shadow:0 24px 70px rgba(8,24,48,.12)}
+.listino-cover{padding:54px 58px 44px;border-bottom:8px solid var(--navy);position:relative;overflow:hidden}
+.listino-cover:after{content:"";position:absolute;width:240px;height:240px;border:58px solid var(--yellow);border-radius:50%;right:-130px;top:-140px}
+.listino-logo{width:250px;height:auto;margin-bottom:48px}
+.listino-cover h1{font-size:64px;line-height:.95;letter-spacing:-.06em;margin:10px 0 18px}
+.listino-subtitle{font-size:19px;line-height:1.6;color:var(--muted);max-width:720px}
+.listino-note{margin-top:32px;padding:16px 20px;background:var(--soft);border-left:4px solid var(--yellow);font-size:13px;font-weight:700}
+.listino-section{padding:46px 58px;border-bottom:1px solid var(--line)}
+.listino-section-head{display:flex;gap:24px;align-items:flex-start;margin-bottom:28px}
+.listino-section-head>span{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:800;flex:0 0 auto}
+.listino-section-head h2{font-size:34px;line-height:1.05;letter-spacing:-.04em;margin:4px 0 0}
+.listino-table{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.listino-table>div{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.listino-table>div:last-child{border-bottom:0}
+.listino-table strong{font-size:14px}
+.listino-table span{font-size:13px;color:var(--muted)}
+.listino-service-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.listino-service-grid article{background:var(--soft);border-radius:18px;padding:22px}
+.listino-service-grid h3{margin:0 0 8px;font-size:18px}
+.listino-service-grid p{margin:0;color:var(--muted);line-height:1.6;font-size:13px}
+.listino-conditions{padding:50px 58px;background:#071b35;color:#fff}
+.listino-conditions h2{font-size:38px;line-height:1.05;letter-spacing:-.04em;margin:8px 0 24px}
+.listino-conditions ul{margin:0;padding-left:20px;color:#c5d1df;line-height:1.75}
+.listino-method{padding:50px 58px}
+.listino-method h2{font-size:36px;line-height:1.08;letter-spacing:-.04em;margin:8px 0 16px;max-width:760px}
+.listino-method>p:last-child{color:var(--muted);line-height:1.7;max-width:760px}
+.listino-footer{padding:28px 58px;background:#050e1c;color:#c9d3e1;display:flex;justify-content:space-between;gap:30px;font-size:11px;line-height:1.7}
+.listino-footer strong{color:#fff}
+.listino-footer a{text-decoration:underline}
+@media(max-width:650px){
+  .listino-document{width:100%;margin:0;box-shadow:none}
+  .listino-cover,.listino-section,.listino-conditions,.listino-method{padding:34px 22px}
+  .listino-cover h1{font-size:48px}
+  .listino-logo{width:210px;margin-bottom:34px}
+  .listino-table>div,.listino-service-grid{grid-template-columns:1fr}
+  .listino-table>div{gap:6px}
+  .listino-footer{padding:26px 22px;flex-direction:column}
+}
+@media print{
+  .listino-topbar{display:none}
+  .listino-web{background:#fff}
+  .listino-document{width:100%;margin:0;box-shadow:none}
+  .listino-cover{break-after:avoid}
+  .listino-section,.listino-conditions,.listino-method{break-inside:avoid}
+  @page{size:A4;margin:10mm}
+}
