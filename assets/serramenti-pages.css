@@ -164,3 +164,6 @@
   .listino-section,.listino-conditions,.listino-method{break-inside:avoid}
   @page{size:A4;margin:10mm}
 }
+
+.serramenti-social-link{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:13px;font-weight:800;color:#fff;text-decoration:underline;text-underline-offset:4px}
+.serramenti-social-link:hover{opacity:.82}
