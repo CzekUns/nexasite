@@ -350,3 +350,6 @@
   .course-principle h2{font-size:48px}
   .course-interest-box{padding:28px}
 }
+.training-social{margin:18px 0 0!important;font-size:13px!important;color:#5f6e7c!important}
+.training-social a{font-weight:800;color:#0b2748;text-decoration:underline;text-underline-offset:3px}
+.course-social-link{font-size:12px;font-weight:800;color:#0b2748;text-decoration:underline;text-underline-offset:3px}
