@@ -1,0 +1,1 @@
+(()=>{const strip=document.querySelector('.partners-strip');if(!strip)return;const button=strip.querySelector('.partners-toggle');button.hidden=false;button.addEventListener('click',()=>{const paused=strip.classList.toggle('is-paused');button.setAttribute('aria-pressed',String(paused));button.textContent=paused?'Riprendi scorrimento':'Metti in pausa';});})();
