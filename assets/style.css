@@ -74,3 +74,81 @@ a{color:inherit;text-decoration:none}button{font:inherit}.skip-link{position:fix
 
 /* A discreet route from the portal to the people behind Nexa. */
 .portal-story-link{font-weight:800;text-decoration:underline;text-underline-offset:5px}.portal-header .portal-story-link{font-size:13px;text-decoration:none}.portal-header .portal-story-link:hover{text-decoration:underline}.portal-intro .portal-story-link{white-space:nowrap;color:#00204c;font-size:15px}
+
+/* Homepage narrative: impresa familiare -> trasformazione -> servizi */
+.home-header-link{font-weight:800;color:var(--navy)}
+.home-hero{margin:0;max-width:none;padding:110px 0 95px}
+.home-hero h1{max-width:1220px;margin-top:18px}
+.home-hero h1 span{color:#264367}
+.home-hero>p:last-of-type{max-width:890px;font-size:20px}
+.home-hero-actions{display:flex;align-items:center;gap:26px;flex-wrap:wrap;margin-top:34px}
+.home-text-link{font-size:14px;font-weight:800;color:var(--navy)}
+.home-text-link:hover,.home-text-link:focus-visible{text-decoration:underline;text-underline-offset:5px}
+
+.home-story{padding:92px 52px;background:var(--soft);border-radius:34px;scroll-margin-top:30px}
+.home-story-head{display:grid;grid-template-columns:.55fr 1.45fr;gap:56px;margin-bottom:46px}
+.home-story-head h2,.home-areas-head h2,.home-proof h2{font-size:clamp(38px,5vw,70px);line-height:1;letter-spacing:-.055em;margin:0 0 20px}
+.home-story-head>div>p{max-width:760px;color:var(--muted);font-size:16px;line-height:1.75}
+.home-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.home-story-grid article{background:#fff;border:1px solid var(--line);border-radius:23px;padding:28px;min-height:330px;display:flex;flex-direction:column}
+.home-story-grid article:nth-child(2){background:#112e4c;color:#fff;border-color:#112e4c}
+.home-story-grid span{font-size:10px;letter-spacing:.13em;font-weight:800;color:#d50019}
+.home-story-grid article:nth-child(2) span{color:#ff6370}
+.home-story-grid h3{font-size:27px;line-height:1.08;letter-spacing:-.04em;margin:46px 0 16px}
+.home-story-grid p{font-size:14px;line-height:1.7;color:#5d6d7e;margin:auto 0 0}
+.home-story-grid article:nth-child(2) p{color:#cad6e3}
+
+.home-proof{margin:18px 0;padding:82px 52px;border-radius:34px;background:#071b35;color:#fff}
+.home-proof .eyebrow{color:#ff6370}
+.home-proof h2{max-width:1080px}
+.home-proof>p:last-child{max-width:820px;font-size:17px;line-height:1.8;color:#c3cfdd}
+
+.home-areas{padding:95px 0 70px;scroll-margin-top:30px}
+.home-areas-head{display:grid;grid-template-columns:.55fr 1.45fr;gap:56px;margin-bottom:42px}
+.home-area-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px}
+.home-area-card{border:1px solid var(--line);border-radius:30px;padding:34px;min-height:560px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}
+.home-area-serramenti{background:#071b35;color:#fff;border-color:#071b35}
+.home-area-serramenti:after{content:"";position:absolute;width:310px;height:310px;border:70px solid #d50019;border-radius:50%;right:-185px;top:-175px;opacity:.9}
+.home-area-index{position:relative;z-index:1;font-size:10px;letter-spacing:.14em;font-weight:800;color:#d50019}
+.home-area-serramenti .home-area-index{color:#ff6370}
+.home-area-card>div{position:relative;z-index:1}
+.home-area-card h3{font-size:clamp(42px,4.7vw,66px);line-height:.94;letter-spacing:-.055em;margin:0 0 22px}
+.home-area-card>div>p{font-size:15px;line-height:1.7;color:#5e6e80;max-width:590px}
+.home-area-serramenti>div>p{color:#c6d2df}
+.home-area-card strong,.home-area-main-link{display:inline-block;margin-top:22px;font-size:13px;font-weight:800}
+.home-area-main-link:hover,.home-area-main-link:focus-visible{text-decoration:underline;text-underline-offset:5px}
+.home-area-digitale{background:#fff}
+.home-diffusione{position:relative;z-index:1;margin-top:34px;padding:24px;border-radius:20px;background:var(--soft);border:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:7px 20px}
+.home-diffusione span,.home-diffusione p{grid-column:1/-1}
+.home-diffusione span{font-size:9px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#d50019}
+.home-diffusione strong{font-size:25px;letter-spacing:-.035em;margin:0}
+.home-diffusione p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+.home-diffusione em{font-size:11px;font-weight:800;font-style:normal;white-space:nowrap;align-self:center}
+.home-diffusione:hover,.home-diffusione:focus-visible{border-color:#a9bdd4;background:#eaf0f7}
+
+@media(max-width:900px){
+  .home-hero{padding:75px 0}
+  .home-story{padding:65px 28px}
+  .home-story-head,.home-areas-head,.home-area-grid{grid-template-columns:1fr;gap:20px}
+  .home-story-grid{grid-template-columns:1fr}
+  .home-story-grid article{min-height:0}
+  .home-proof{padding:65px 30px}
+  .home-areas{padding:70px 0 45px}
+  .home-area-card{min-height:480px}
+}
+@media(max-width:560px){
+  .home-header-link{display:none}
+  .home-hero{padding:58px 0 64px}
+  .home-hero h1{font-size:47px}
+  .home-hero>p:last-of-type{font-size:16px}
+  .home-story{padding:52px 20px;border-radius:24px}
+  .home-story-head h2,.home-areas-head h2,.home-proof h2{font-size:40px}
+  .home-story-grid article{padding:24px}
+  .home-proof{padding:54px 22px;border-radius:24px}
+  .home-area-card{min-height:0;padding:26px;border-radius:24px}
+  .home-area-card h3{font-size:43px;margin-top:80px}
+  .home-area-digitale h3{margin-top:70px}
+  .home-diffusione{grid-template-columns:1fr;padding:20px}
+  .home-diffusione span,.home-diffusione p{grid-column:1}
+  .home-diffusione em{white-space:normal}
+}
