@@ -165,3 +165,8 @@ a{color:inherit;text-decoration:none}button{font:inherit}.skip-link{position:fix
   .home-wordmark-x{width:33px;height:43px}
   .home-wordmark-x i,.home-wordmark-x b{left:12px;top:4px;width:9px;height:36px}
 }
+
+/* Override legacy .brand span rules for the homepage wordmark */
+.brand .home-wordmark{display:inline-flex;flex-direction:row;align-items:center;line-height:1}
+.brand .home-wordmark-ne,.brand .home-wordmark-a{display:block;flex-direction:row;line-height:1}
+.brand .home-wordmark-x{display:block;flex-direction:row;line-height:1}
