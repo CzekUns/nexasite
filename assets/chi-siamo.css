@@ -48,3 +48,31 @@
 @media(max-width:760px){.about-header{align-items:start;flex-direction:column;gap:8px}.about-header img{height:68px;width:176px}.about-header nav{gap:12px 20px}.about-hero{padding:72px 0 84px}.about-statement,.about-place,.about-work{padding:70px 0}.about-statement-grid,.about-place-grid,.about-people-grid,.about-work-grid,.about-contact-grid{grid-template-columns:1fr;gap:18px}.about-people{padding-bottom:70px}.about-person{min-height:350px}.about-footer>.about-wrap{align-items:start;flex-direction:column}}
 
 .about-projects{padding:90px 0;border-top:1px solid #dfe5ed}.about-project-list{border-top:1px solid #dfe5ed}.about-project-list a{display:grid;grid-template-columns:1fr 1.1fr 2fr auto;gap:18px;align-items:center;padding:26px 5px;border-bottom:1px solid #dfe5ed}.about-project-list a:hover strong,.about-project-list a:focus-visible strong{color:#d50019}.about-project-list span{font-size:11px;letter-spacing:.08em;color:#617086;text-transform:uppercase;font-weight:800}.about-project-list strong{font-size:23px;letter-spacing:-.03em}.about-project-list p{font-size:13px;line-height:1.6;color:#52647a;margin:0}.about-project-list em{font-size:12px;font-weight:800;font-style:normal;white-space:nowrap}@media(max-width:760px){.about-projects{padding:65px 0}.about-project-list a{grid-template-columns:1fr auto;gap:8px}.about-project-list span,.about-project-list p{grid-column:1/-1}.about-project-list strong{grid-column:1}.about-project-list em{grid-column:2}}
+
+/* Storia e metodo */
+.about-story{padding:100px 0;background:#fff}
+.about-timeline{list-style:none;margin:0;padding:0;border-top:1px solid #dfe5ed}
+.about-timeline li{display:grid;grid-template-columns:minmax(120px,.7fr) 2.3fr;gap:42px;padding:34px 4px;border-bottom:1px solid #dfe5ed}
+.about-timeline time,.about-timeline li>span{color:#d50019;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding-top:7px}
+.about-timeline h3{font-size:clamp(23px,2.5vw,31px);letter-spacing:-.035em;margin:0 0 10px}
+.about-timeline p{color:#536478;font-size:15px;line-height:1.75;margin:0;max-width:760px}
+.about-quote{padding:90px 0;background:#071b35;color:#fff}
+.about-quote blockquote{max-width:980px;margin:0;font-size:clamp(34px,5vw,64px);line-height:1.15;letter-spacing:-.045em;font-weight:700}
+.about-quote p{margin:26px 0 0;color:#afc2da;font-size:13px}
+.about-method{padding:100px 0;background:#f3f6fa}
+.about-method-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:80px;align-items:start}
+.about-method h2,.about-partner h2{font-size:clamp(38px,4.5vw,62px);line-height:1.07;letter-spacing:-.05em;margin:0 0 24px}
+.about-method p:not(.eyebrow),.about-partner p:not(.eyebrow){font-size:16px;line-height:1.8;color:#536478}
+.about-method ol{list-style:none;margin:0;padding:0;border-top:1px solid #ccd7e3}
+.about-method li{display:flex;gap:20px;padding:17px 4px;border-bottom:1px solid #ccd7e3;font-weight:700}
+.about-method li span{width:32px;color:#d50019;font-size:11px;letter-spacing:.08em}
+.about-partner{padding:100px 0}
+.about-partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.about-partner a{display:inline-block;margin-top:18px;color:#00204c;font-size:13px;font-weight:800}
+.about-partner a:hover,.about-partner a:focus-visible{text-decoration:underline;text-underline-offset:5px}
+@media(max-width:760px){
+  .about-story,.about-method,.about-partner,.about-quote{padding:68px 0}
+  .about-timeline li{grid-template-columns:1fr;gap:9px;padding:27px 2px}
+  .about-timeline time,.about-timeline li>span{padding-top:0}
+  .about-method-grid,.about-partner-grid{grid-template-columns:1fr;gap:30px}
+}
