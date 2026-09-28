@@ -152,3 +152,16 @@ a{color:inherit;text-decoration:none}button{font:inherit}.skip-link{position:fix
   .home-diffusione span,.home-diffusione p{grid-column:1}
   .home-diffusione em{white-space:normal}
 }
+
+/* Text-only Nexa master wordmark for the corporate homepage */
+.home-wordmark{display:inline-flex;align-items:center;gap:3px;height:78px;color:#071b35;font-size:46px;font-weight:800;line-height:1;letter-spacing:.075em}
+.home-wordmark-ne,.home-wordmark-a{display:block}
+.home-wordmark-x{position:relative;display:block;width:43px;height:55px;margin:0 -1px}
+.home-wordmark-x i,.home-wordmark-x b{position:absolute;left:16px;top:4px;width:11px;height:47px;border-radius:1px;transform-origin:center}
+.home-wordmark-x i{background:#d50019;transform:rotate(-38deg)}
+.home-wordmark-x b{background:#071b35;transform:rotate(38deg)}
+@media(max-width:600px){
+  .home-wordmark{height:58px;font-size:35px}
+  .home-wordmark-x{width:33px;height:43px}
+  .home-wordmark-x i,.home-wordmark-x b{left:12px;top:4px;width:9px;height:36px}
+}
