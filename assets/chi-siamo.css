@@ -76,3 +76,27 @@
   .about-timeline time,.about-timeline li>span{padding-top:0}
   .about-method-grid,.about-partner-grid{grid-template-columns:1fr;gap:30px}
 }
+
+/* Percorso professionale di Simone */
+.simone-story{padding:105px 0;background:#eef3f8;scroll-margin-top:28px}
+.simone-story-head{display:grid;grid-template-columns:1.15fr .85fr;gap:72px;align-items:end;margin-bottom:48px}
+.simone-story h2{font-size:clamp(42px,5.5vw,74px);line-height:1;letter-spacing:-.055em;margin:10px 0 0;max-width:760px}
+.simone-story-head>p{font-size:17px;line-height:1.8;color:#536478;margin:0}
+.simone-path{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.simone-path article{min-height:340px;padding:30px;border-radius:24px;background:#fff;border:1px solid #dce4ed;display:flex;flex-direction:column}
+.simone-path article:nth-child(2){background:#112e4c;color:#fff;border-color:#112e4c}
+.simone-path span{font-size:10px;font-weight:800;letter-spacing:.13em;color:#d50019}
+.simone-path article:nth-child(2) span{color:#ff6370}
+.simone-path h3{font-size:28px;line-height:1.08;letter-spacing:-.04em;margin:42px 0 16px}
+.simone-path p{font-size:14px;line-height:1.72;color:#5a6b7d;margin:0}
+.simone-path article:nth-child(2) p{color:#cad6e3}
+.simone-principle{display:flex;align-items:center;justify-content:space-between;gap:40px;margin-top:18px;padding:28px 30px;border-radius:20px;background:#071b35;color:#fff}
+.simone-principle p{font-size:18px;line-height:1.55;max-width:800px;margin:0}
+.simone-principle a{font-size:13px;font-weight:800;white-space:nowrap}
+@media(max-width:850px){
+  .simone-story{padding:70px 0}
+  .simone-story-head,.simone-path{grid-template-columns:1fr;gap:18px}
+  .simone-story-head{align-items:start;margin-bottom:34px}
+  .simone-path article{min-height:0}
+  .simone-principle{align-items:flex-start;flex-direction:column;gap:18px}
+}
