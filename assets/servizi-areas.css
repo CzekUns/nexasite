@@ -375,3 +375,16 @@
   .formation-pill-status{grid-row:auto;width:max-content}
   .formation-project-pill strong{font-size:22px}
 }
+
+/* Origine professionale di Nexa Servizi */
+.services-origin{padding:96px 24px;background:#071b35;color:#fff}
+.services-origin-layout{display:grid;grid-template-columns:.95fr 1.05fr;gap:78px;align-items:start}
+.services-origin .eyebrow{color:#ff6370}
+.services-origin h2{font-size:clamp(42px,5.5vw,74px);line-height:.98;letter-spacing:-.058em;margin:10px 0 0}
+.services-origin-copy{font-size:17px;line-height:1.8;color:#c7d3df}
+.services-origin-copy p{margin-top:0}
+.services-origin-copy a{display:inline-block;margin-top:14px;color:#fff;font-size:13px;font-weight:800;text-decoration:underline;text-underline-offset:5px}
+@media(max-width:800px){
+  .services-origin{padding:70px 22px}
+  .services-origin-layout{grid-template-columns:1fr;gap:28px}
+}
