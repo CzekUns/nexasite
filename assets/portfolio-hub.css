@@ -1,0 +1,69 @@
+/* Portfolio hub 2026 — UI Nexa, pagine personali per competenza */
+.hub{background:#f5f7fb;color:#102942}
+.hub *{box-sizing:border-box}
+.hub .hub-wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+.hub .hub-top{background:linear-gradient(128deg,#061b34 10%,#103b65 80%,#164c68);color:#fff;position:relative;overflow:hidden}
+.hub .hub-top:after{position:absolute;content:"";width:440px;height:440px;right:-180px;top:-190px;border:1px solid rgba(255,255,255,.11);border-radius:50%;box-shadow:0 0 0 90px rgba(255,255,255,.025),0 0 0 175px rgba(255,255,255,.017);pointer-events:none}
+.hub .hub-top-inner{position:relative;z-index:1;padding:89px 0 90px}
+.hub .ey{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:#be0021}
+.hub .hub-top .ey{color:#ff8895}
+.hub .hub-top h1{max-width:940px;font-size:clamp(42px,6vw,80px);line-height:1.03;letter-spacing:-.065em;color:#fff;margin:20px 0 25px}
+.hub .hub-top h1 em{font-style:normal;color:#ff7b89}
+.hub .hub-top p{font-size:clamp(16px,1.7vw,19px);line-height:1.68;color:#d3deea;max-width:780px}
+.hub .hub-breadcrumb{display:flex;align-items:center;gap:10px;font-size:12px;color:#ced9e5;flex-wrap:wrap}
+.hub .hub-breadcrumb a{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.hub .hub-section{padding:75px 0}
+.hub .hub-section.white{background:#fff}
+.hub .hub-section.soft{background:#edf2f7}
+.hub .hub-section h2{color:#0b2b49;font-size:clamp(32px,4vw,52px);line-height:1.1;letter-spacing:-.05em;margin:12px 0 16px}
+.hub .hub-intro{font-size:16px;color:#64778b;line-height:1.78;max-width:850px;margin:0 0 34px}
+.hub .chooser{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.hub .choose-card{display:flex;flex-direction:column;background:#fff;border:1px solid #d9e3ee;border-radius:24px;padding:32px;text-decoration:none;min-height:265px;transition:transform .22s,box-shadow .22s,border-color .22s}
+.hub .choose-card:hover,.hub .choose-card:focus-visible{transform:translateY(-5px);box-shadow:0 18px 42px rgba(15,47,77,.09);border-color:#93afc8}
+.hub .choose-card .tag{font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:#bd0021}
+.hub .choose-card h3{font-size:clamp(25px,3vw,34px);letter-spacing:-.045em;line-height:1.09;color:#102b49;margin:23px 0 11px}
+.hub .choose-card p{font-size:14px;line-height:1.68;color:#64788b;margin:0}
+.hub .choose-card .go{font-size:13px;font-weight:800;color:#a90020;margin-top:auto;padding-top:25px}
+.hub .choose-card.featured{background:linear-gradient(135deg,#061b34,#0e355c);border-color:#133657}
+.hub .choose-card.featured h3{color:#fff}.hub .choose-card.featured p{color:#becddf}.hub .choose-card.featured .tag{color:#ff8392}.hub .choose-card.featured .go{color:#fff}
+.hub .choose-card.wide{grid-column:span 2;min-height:200px}
+.hub .hub-micro-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.hub .hub-micro{border:1px solid #dce5ef;border-radius:21px;padding:25px;background:#fff}
+.hub .hub-micro h3{font-size:22px;letter-spacing:-.025em;color:#11314e;margin:13px 0 9px}
+.hub .hub-micro p{font-size:14px;line-height:1.72;color:#64778b;margin:0}
+.hub .hub-projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.hub .hub-project{background:#fff;border:1px solid #dce5ed;padding:27px 29px;border-radius:23px}
+.hub .hub-project small{display:block;font-size:10px;font-weight:800;letter-spacing:.13em;color:#bd0021;text-transform:uppercase}
+.hub .hub-project h3{font-size:25px;line-height:1.13;letter-spacing:-.04em;color:#0b2d4d;margin:18px 0 8px}
+.hub .hub-project p{color:#5e7388;font-size:14px;line-height:1.73;margin:0}
+.hub .hub-project .hub-extra{border-top:1px solid #dce5ed;margin-top:18px;padding-top:14px;color:#284861;font-size:13px}
+.hub .hub-project a{display:inline-block;color:#a80020;font-size:13px;font-weight:800;text-decoration:none;margin-top:18px}
+.hub .hub-project a:hover{text-decoration:underline}
+.hub .hub-cred{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.hub .hub-cert{background:#fff;border:1px solid #dae4ee;border-radius:25px;padding:31px}
+.hub .hub-cert .provider{font-size:12px;color:#b8001e;font-weight:800;text-transform:uppercase;letter-spacing:.11em}
+.hub .hub-cert h3{font-size:27px;letter-spacing:-.04em;line-height:1.13;color:#0d2d4b;margin:17px 0 12px}
+.hub .hub-cert p,.hub .hub-cert li{color:#607489;font-size:14px;line-height:1.7}
+.hub .hub-cert .credential-meta{border-top:1px solid #dae4ec;margin-top:20px;padding-top:16px;color:#3e576e;font-size:13px}
+.hub .hub-cert .credential-meta a{color:#a00020;font-weight:800}
+.hub .hub-timeline{border-left:2px solid #d3dee9;padding-left:25px;margin-left:7px;display:grid;gap:23px}
+.hub .hub-timeline article{position:relative}
+.hub .hub-timeline article:before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:#cc0021;left:-32px;top:8px;box-shadow:0 0 0 4px #fff}
+.hub .hub-timeline h3{font-size:21px;color:#10304d;margin:0 0 6px}
+.hub .hub-timeline p{font-size:14px;color:#677b90;line-height:1.75;margin:0}
+.hub .hub-band{background:#0a2747;color:#fff;padding:40px 0}
+.hub .hub-band .hub-wrap{display:flex;align-items:center;justify-content:space-between;gap:25px}
+.hub .hub-band strong{display:block;font-size:24px;letter-spacing:-.035em}
+.hub .hub-band p{margin:9px 0 0;color:#c4d2e0;font-size:14px;line-height:1.65}
+.hub .hub-btn{display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:15px 22px;border-radius:12px;background:#d50019;color:#fff!important;text-decoration:none;font-size:14px;font-weight:800;white-space:nowrap}
+.hub .hub-btn:hover{background:#b80015}
+.hub .hub-backnav{padding:34px 0}
+.hub .hub-backnav a{font-size:13px;font-weight:800;color:#183e5d;text-decoration:none}
+.hub .hub-backnav a:hover{text-decoration:underline}
+.hub .hub-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.hub .hub-tags span{border:1px solid #496782;background:rgba(255,255,255,.05);color:#e0eaf4;font-weight:700;padding:9px 13px;font-size:12px;border-radius:40px}
+.hub .hub-inline-link{color:#aa0022;font-weight:800;text-underline-offset:3px}
+.hub .hub-copy{color:#60758a;line-height:1.8;max-width:850px;font-size:15px}
+.hub a:focus-visible{outline:3px solid #ed8290;outline-offset:3px}
+@media(max-width:870px){.hub .hub-micro-grid{grid-template-columns:repeat(2,1fr)}.hub .hub-top-inner{padding:72px 0}}
+@media(max-width:680px){.hub .chooser,.hub .hub-micro-grid,.hub .hub-projects,.hub .hub-cred{grid-template-columns:1fr}.hub .choose-card.wide{grid-column:span 1}.hub .hub-band .hub-wrap{align-items:flex-start;flex-direction:column}.hub .hub-btn{width:100%}.hub .hub-section{padding:55px 0}.hub .choose-card{min-height:220px}.hub .hub-top-inner{padding:60px 0}.hub .hub-cert{padding:24px}}
